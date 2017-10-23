@@ -60,8 +60,8 @@ export default AngularJeopardy = () => (
     <ScrollView>
       {data.map(trivia =>
         <View>
-          {/* <Question q={trivia.Q}/>
-          <Answer a={trivia.A}/> */}
+          {<Question q={trivia.Q}/>
+          <Answer a={trivia.A}/>}
         </View>
       )}
     </ScrollView>

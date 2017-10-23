@@ -20,3 +20,16 @@ export default App = () => (
     <Image source={require('./img/jeopardy-js.png')}/>
   </Container>
 );
+
+export const mainNavigator = TabNavigator({
+  Home: {
+    screen: App,
+    path: ''
+  }
+});
+
+App.navigationOptions = {
+  tabBarIcon: () => (
+    <Image source={require('./img/js.png')}/>
+  )
+}

@@ -42,3 +42,16 @@ textAlign: center;
 margin: 10px;
 `;
 
+export default VueJeopardy = () => (
+  <Container>
+    <TextStyled>
+      <Image source={require('./img/jeopardy-vue.png')}/>
+    </TextStyled>
+  </Container>
+);
+
+VueJeopardy.navigationOptions = {
+  tabBarIcon: () => (
+    <Image source={require('./img/vue.png')}/>
+  )
+}

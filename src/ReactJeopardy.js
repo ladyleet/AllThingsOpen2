@@ -4,8 +4,7 @@ import {
   StyleSheet,
   Text,
   View,
-  Image,
-  ScrollView
+  Image
 } from 'react-native';
 import styled from 'styled-components/native';
 
@@ -50,3 +49,17 @@ const TextStyled = styled.Text`
   textAlign: center;
   margin: 10px;
 `;
+
+export default ReactJeopardy = () => (
+  <Container>
+    <TextStyled>
+      <Image source={require('./img/jeopardy-angular.png')}/>
+    </TextStyled>
+  </Container>
+);
+
+ReactJeopardy.navigationOptions = {
+  tabBarIcon: () => (
+    <Image source={require('./img/angular.png')}/>
+  )
+}
