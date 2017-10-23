@@ -1,0 +1,3 @@
+rootProject.name = 'allThingsOpen2'
+
+include ':app'
