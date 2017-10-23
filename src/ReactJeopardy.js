@@ -4,9 +4,12 @@ import {
   StyleSheet,
   Text,
   View,
-  Image
+  Image,
+  ScrollView
 } from 'react-native';
 import styled from 'styled-components/native';
+import Question from './Question';
+import Answer from './Answer';
 
 const data = [{
   Q: "The company that created React.",
@@ -55,6 +58,14 @@ export default ReactJeopardy = () => (
     <TextStyled>
       <Image source={require('./img/jeopardy-react.png')}/>
     </TextStyled>
+    <ScrollView>
+      {data.map(trivia =>
+        <View>
+          <Question q={trivia.Q}/>
+          <Answer a={trivia.A}/>
+        </View>
+      )}
+    </ScrollView>
   </Container>
 );
 

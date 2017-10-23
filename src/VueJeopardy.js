@@ -44,6 +44,14 @@ export default VueJeopardy = () => (
     <TextStyled>
       <Image source={require('./img/jeopardy-vue.png')}/>
     </TextStyled>
+    <ScrollView>
+      {data.map(trivia =>
+        <View>
+          <Question q={trivia.Q}/>
+          <Answer a={trivia.A}/>
+        </View>
+      )}
+    </ScrollView>
   </Container>
 );
 
