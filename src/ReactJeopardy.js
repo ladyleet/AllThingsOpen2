@@ -53,13 +53,13 @@ const TextStyled = styled.Text`
 export default ReactJeopardy = () => (
   <Container>
     <TextStyled>
-      <Image source={require('./img/jeopardy-angular.png')}/>
+      <Image source={require('./img/jeopardy-react.png')}/>
     </TextStyled>
   </Container>
 );
 
 ReactJeopardy.navigationOptions = {
   tabBarIcon: () => (
-    <Image source={require('./img/angular.png')}/>
+    <Image source={require('./img/react.png')}/>
   )
 }

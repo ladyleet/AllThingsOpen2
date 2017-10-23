@@ -25,9 +25,6 @@ const data = [{
   Q: "Vue was written while the author was at this company.",
   A: "What is Google?"
 },{
-  Q: "True or False: React is an MVC based framework.",
-  A: "What is false?"
-},{
   Q: "Vue was released on this year.",
   A: "What is February 2014?"
 }];
