@@ -8,6 +8,8 @@ import {
 } from 'react-native';
 import styled from 'styled-components/native';
 import { TabNavigator } from 'react-navigation';
+import AngularJeopardy from './AngularJeopardy';
+import ReactJeopardy from './ReactJeopardy';
 
 const Container = styled.View`
   justifyContent: center;
@@ -25,6 +27,14 @@ export const mainNavigator = TabNavigator({
   Home: {
     screen: App,
     path: ''
+  },
+  Angular: {
+    screen: AngularJeopardy,
+    path: 'angular'
+  },
+  React: {
+    screen: ReactJeopardy,
+    path: 'react'
   }
 });
 

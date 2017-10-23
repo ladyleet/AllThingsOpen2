@@ -5,6 +5,12 @@ import {
 } from 'react-native';
 import styled from 'styled-components/native';
 
-export default Question = () => (
-  
+const TextStyled = styled.Text`
+  margin: 5px;
+`;
+
+export default Question = ({q}) => (
+  <TextStyled>
+    Question: {q}
+  </TextStyled>
 );

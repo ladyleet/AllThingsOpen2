@@ -4,7 +4,8 @@ import {
   StyleSheet,
   Text,
   View,
-  Image
+  Image,
+  ScrollView
 } from 'react-native';
 import styled from 'styled-components/native';
 
@@ -53,13 +54,21 @@ const TextStyled = styled.Text`
 export default ReactJeopardy = () => (
   <Container>
     <TextStyled>
-      <Image source={require('./img/jeopardy-angular.png')}/>
+      <Image source={require('./img/jeopardy-react.png')}/>
     </TextStyled>
+    <ScrollView>
+    {data.map(trivia => 
+      <View>
+        <Question q={trivia.Q}/> 
+        <Answer a={trivia.A}/> 
+      </View>
+    )}
+    </ScrollView>
   </Container>
 );
 
 ReactJeopardy.navigationOptions = {
   tabBarIcon: () => (
-    <Image source={require('./img/angular.png')}/>
+    <Image source={require('./img/react.png')}/>
   )
 }

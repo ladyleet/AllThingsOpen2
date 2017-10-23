@@ -8,6 +8,8 @@ import {
   ScrollView
 } from 'react-native';
 import styled from 'styled-components/native';
+import Question from './Question';
+import Answer from './Answer';
 
 const data = [{
   Q: "Angulars only external dependency.",
@@ -60,8 +62,8 @@ export default AngularJeopardy = () => (
     <ScrollView>
       {data.map(trivia =>
         <View>
-          {<Question q={trivia.Q}/>
-          <Answer a={trivia.A}/>}
+          <Question q={trivia.Q}/>
+          <Answer a={trivia.A}/>
         </View>
       )}
     </ScrollView>
